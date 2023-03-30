@@ -46,7 +46,6 @@ ui <- fluidPage(
       ),style = "background-color: #00A67E")
   ),style = "background-color: #3d3f4e")
 
-
 server <- function(input, output, session) {
   chat_data <- reactiveVal(data.frame())
   
@@ -97,7 +96,5 @@ server <- function(input, output, session) {
       session$sendCustomMessage(type = "downloadData", message = "download_data")
     }
   })
-  
 }
-
 shinyApp(ui = ui, server = server)
