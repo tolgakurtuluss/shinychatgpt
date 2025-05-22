@@ -20,7 +20,7 @@ ui <- fluidPage(
       ),
       tags$hr(),
       selectInput("model_name", "Model Name",
-                  choices = c("gpt-4", "gpt-4-0314", "gpt-3.5-turbo-0301", "gpt-3.5-turbo"), selected = "gpt-3.5-turbo"),
+                  choices = c("gpt-4o", "gpt-4-turbo", "gpt-4-turbo-preview", "gpt-4-0125-preview", "gpt-4-1106-preview", "gpt-4", "gpt-4-0613", "gpt-3.5-turbo", "gpt-3.5-turbo-0125", "gpt-3.5-turbo-1106"), selected = "gpt-3.5-turbo"),
       sliderInput("temperature", "Temperature", min = 0.1, max = 1.0, value = 0.7, step = 0.1),
       sliderInput("max_length", "Maximum Length", min = 1, max = 2048, value = 512, step = 1),
       tags$hr(),
