@@ -2,6 +2,7 @@ library(shiny)
 library(httr)
 library(jsonlite)
 library(shinyjs)
+library(magrittr)
 
 ui <- fluidPage(
   useShinyjs(),
